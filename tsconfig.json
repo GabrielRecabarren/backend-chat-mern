@@ -1,11 +1,11 @@
 {
 	"compilerOptions": {
 		"module": "CommonJS" /* esto es para definir que nuestro código compilado luego pasará a JS */,
-		"lib": ["DOM", "ES2020"],
+		"lib": ["DOM", "ES2015"],
 		"esModuleInterop": true /* esto es para asegurarnos de darle soporte a nuestro JS de acuerdo al TS compilado */,
 		"resolveJsonModule": true /* nos permite intepretar importaciones de archivos .json */,
 		"moduleResolution": "node" /* esto nos permite verificar la inclusión de TS de forma explícita en node */,
-		"target": "ES2020" /* aquí defines tu estandarización del ECMMA */,
+		"target": "ES2015" /* aquí defines tu estandarización del ECMMA */,
 		"noUnusedLocals": false,
 		"noUnusedParameters": false,
 		"forceConsistentCasingInFileNames": true,
