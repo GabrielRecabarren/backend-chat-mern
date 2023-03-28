@@ -6,10 +6,11 @@
         "ts": "ts-node"
     },
     "events": {
-        "restart": "yarn run lint"
+        "restart": "yarn run lint:check"
     },
     "env":{
         "NODE_ENV": "development"
+
     },
     "verbose": true,
     "restartable": "rs"

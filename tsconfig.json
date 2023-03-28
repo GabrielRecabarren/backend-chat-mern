@@ -17,13 +17,12 @@
 		"strict": true /* te permite habilitar el modo estricto para que te de sugerencias/recomendaciones de código en base al ECMMA */,
 		"baseUrl": "./" /* te permite definir el path donde se creará tu carpeta de distribución con el código final */,
 		"outDir": "./build" /* te permite darle el nombre a la carpeta de distribución */,
-		"pretty": true
-
+		"pretty": true,
 	},
 	"exclude": [
 		"node_modules"
 	] /* te permite excluir del proceso de compilación el node_modules */,
 	"include": [
 		"src/**/*.ts"
-	] /* te permite incluir en el proceso de compilación tu directorio de trabajo donde tienes tus .ts */
- }
+, "src/config.ts"	] /* te permite incluir en el proceso de compilación tu directorio de trabajo donde tienes tus .ts */
+}
