@@ -1,44 +1,44 @@
 {
-   "root": true,
-   "parser": "@typescript-eslint/parser",
-   "plugins": [
-      "@typescript-eslint"
-   ],
-   "extends": [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/eslint-recommended",
-      "plugin:@typescript-eslint/recommended",
-      "prettier"
-   ],
-   "parserOptions": {
-      "ecmaVersion": 2020,
-      "sourceType": "module"
-   },
-   "rules": {
-      "semi": [
-         2,
-         "always"
-      ],
-      "space-before-function-paren": [
-         0,
-         {
-            "anonymous": "always",
-            "named": "always"
-         }
-      ],
-      "quotes": [
-         "error",
-         "single"
-      ],
-      "@typescript-eslint/no-explicit-any": [
-         "warn"
-      ],
-      "no-return-assign": 0,
-      "camelcase": 0,
-      "@typescript-eslint/no-non-n ull-assertion": "off",
-      "curly": "error",
-      "no-empty": "error",
-      "@typescript-eslint/no-unused-vars": "warn",
-      "@typescript-eslint/explicit-module-boundary-types": "off"
-   }
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "rules": {
+        "semi": [
+            2,
+            "always"
+        ],
+        "space-before-function-paren": [
+            0,
+            {
+                "anonymous": "always",
+                "named": "always"
+            }
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "@typescript-eslint/no-explicit-any": [
+            "warn"
+        ],
+        "no-return-assign": 0,
+        "camelcase": 0,
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "curly": "error",
+        "no-empty": "error",
+        "@typescript-eslint/no-unused-vars": "warn",
+        "@typescript-eslint/explicit-module-boundary-types": "off"
+    }
 }
