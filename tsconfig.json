@@ -18,11 +18,22 @@
 		"baseUrl": "./" /* te permite definir el path donde se creará tu carpeta de distribución con el código final */,
 		"outDir": "./build" /* te permite darle el nombre a la carpeta de distribución */,
 		"pretty": true,
+        "plugins": [//Establece pluggins de transformacion de alias paths
+            {"transform": "typescript-transform-paths"}, //Establece la conexion con el transformador
+            {"transform": "typescript-transform-paths", "afterDeclarations": true}//establece que la definicion persista
+        ],
+        "paths": {//Establece la configuracion de tus alias paths
+            "@globals/*": ["src/shared/globals/*"],
+            "@bootstrap/*": ["src/bootstrap/*"],
+            "@configs/*": ["src/configs/*"],
+            "@features/*": ["src/features/*"],
+            "@root/*": ["src/*"]
+        }
 	},
 	"exclude": [
 		"node_modules"
 	] /* te permite excluir del proceso de compilación el node_modules */,
 	"include": [
 		"src/**/*.ts"
-, "src/config.ts"	] /* te permite incluir en el proceso de compilación tu directorio de trabajo donde tienes tus .ts */
+, "src/configs/configEnvs.ts"	] /* te permite incluir en el proceso de compilación tu directorio de trabajo donde tienes tus .ts */
 }

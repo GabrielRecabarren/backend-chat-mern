@@ -7,11 +7,9 @@ import compression from 'compression';
 import cookieSession from 'cookie-session';
 import 'express-async-errors';
 import Logger from 'bunyan';
-import { config } from '../config';
-
-
-const log: Logger = config.createLogger('server');
-
+import { config } from '@configs/configEnvs';
+import { logger } from '@configs/configLogs';
+const log: Logger = logger.createLogger('server');
 
 export class ChatServer {
     private app: Application;

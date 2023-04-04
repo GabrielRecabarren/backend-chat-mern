@@ -1,7 +1,7 @@
 import express, { Express } from 'express';
-import { ChatServer } from './bootstrap/setupServer.bootstrap';
-import databaseConnection from './bootstrap/setupDatabase.bootstrap';
-import { config } from './config';
+import { ChatServer } from '@bootstrap/setupServer.bootstrap';
+import databaseConnection from '@bootstrap/setupDatabase.bootstrap';
+import { config } from '@configs/configEnvs';
 
 class Application {
     public initialize(): void {
