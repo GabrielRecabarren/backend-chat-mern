@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Revisión y Resumen Carpetas del Proyecto</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="general">
+            <ul >
+                <li>
+                    src
+                    <ul>
+                        <li>
+                            bootstrap
+
+                            <ul>
+                                <p>
+                                    Principales definiciones y configuraciones de arranque para el servidor(setup.Server) y
+                                    de la base de datos (setup.Database)
+                                </p>
+                                <ul>
+                                    <li>
+                                        setup.Database:
+                                    </li>
+                                    <p> Establece una conexión a la base de datos y registra un mensaje de
+                                        éxito o error. También establece una conexión con Redis y utiliza el patrón
+                                        Singleton.</p>
+                                    <li>
+                                        setup.Server:</li>
+                                        <p> Aqui va todo lo referente a las configuracion del
+                                            server y de la inicializacion del mismo como por ejemplo: seguridad de middlewares,
+                                            standar middlewares, los middleware de routes, los errores globales, el arranque del
+                                            servidor de node y por ultimos los sockets
+                                        </p>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li>
+                            configs
+                            <ul>
+                                <p>Configuraciones globales de variables de entorno, logs(trazas)</p>
+                                <ul>
+                                    <li>configEnv.ts</li> Definiciones, declaraciones y configuraciones de variables de entorno</li>
+                                    <li>configLog.ts  </li>Configuración, creación e instanciación del objeto Logger de Bunyan para monitoreo de procesos
+                                </ul>
+                            </ul>
+                        </li>
+                        <li>features (Cebolla)</li>
+
+                        <p>Encapsula todos los módulos de la app y su gestion. Arquitectura Onion</p>
+                        <ul><li>user</li>
+                            <ul>
+                                <p>interfaces</p>
+                                <p>models</p>
+
+
+                            </ul>
+
+                            <li>auth</li>
+                            <ul><p>controllers</p>
+                                <p>interfaces</p>
+                                <p>models</p>
+                                <p>routes</p>
+                                <p></p></ul>
+                        </ul>
+                        <li>interfaces/HTTP</li>
+                            <p>Rutas de exposición</p>
+                            <ul><li>routes.ts</li>
+                            <p>Se establecen las rutas padre con el patrón de diseño Chain of Responsability, middleware y funciones de rutas hijas</p></ul>
+                       <li>shared/globals</li>
+                        </ul>
+
+                </li>
+            </ul>
+        </div>
+
+    </body>
+</html>
