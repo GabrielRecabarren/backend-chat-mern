@@ -23,10 +23,14 @@
             {"transform": "typescript-transform-paths", "afterDeclarations": true}//establece que la definicion persista
         ],
         "paths": {//Establece la configuracion de tus alias paths
-            "@globals/*": ["src/shared/globals/*"],
             "@bootstrap/*": ["src/bootstrap/*"],
             "@configs/*": ["src/configs/*"],
             "@features/*": ["src/features/*"],
+            "@interfaces/*": ["src/interfaces/http/*"],
+            "@decorators/*": ["src/shared/globals/decorators/*"],
+            "@helpers/*": ["src/shared/globals/helpers/*"],
+            "@services/*": ["src/shared/globals/services/*"],
+            "@workers/*": ["src/shared/globals/workers/*"],
             "@root/*": ["src/*"]
         }
 	},
