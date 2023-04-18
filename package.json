@@ -9,7 +9,7 @@
     "lint:fix": "npx eslint --fix .",
     "prettier:check": "prettier --check src/**/*.{ts,json}",
     "prettier:fix": "prettier --write src/**/*.{ts,json}",
-    "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json"
+    "build": "ttsc -p ."
   },
   "keywords": [],
   "author": "Gabriel Recabarren- Bootcamp MERN",
