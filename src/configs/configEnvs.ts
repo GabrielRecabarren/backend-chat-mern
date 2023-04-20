@@ -1,4 +1,5 @@
 import dotenv from 'dotenv';
+import { ChatServer } from '../bootstrap/setupServer.bootstrap';
 dotenv.config({});
 
 class Config {
@@ -10,6 +11,10 @@ class Config {
     public CLIENT_URL: string | undefined;
     public SERVER_PORT: string | undefined;
     public REDIS_HOST: string |  undefined;
+    public CLOUD_NAME: string | undefined;
+    public CLOUD_API_KEY: string | undefined;
+    public CLOUD_API_SECRET: string | undefined;
+
 
     constructor() {
         this.DATABASE_URL = process.env.DATABASE_URL;
@@ -20,6 +25,9 @@ class Config {
         this.CLIENT_URL = process.env.CLIENT_URL;
         this.SERVER_PORT = process.env.SERVER_PORT;
         this.REDIS_HOST = process.env.REDIS_HOST;
+        this.CLOUD_NAME = process.env.CLOUD_NAME;
+        this.CLOUD_API_KEY= process.env.CLOUD_API_KEY;
+        this.CLOUD_API_SECRET=process.env.CLOUD_API_SECRET;
     }
 
     public validateConfig(): void {
